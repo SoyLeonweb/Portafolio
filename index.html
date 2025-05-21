@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100">
+
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-indigo-600">Leon</a>
+
+        <!-- Botón hamburguesa -->
+        <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        </button>
+
+        <!-- Menú de escritorio -->
+        <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Inicio</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Servicios</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Menú móvil desplegable centrado -->
+    <div id="menu" class="md:hidden hidden flex flex-col items-center gap-4 py-4">
+    <a href="#" class="text-gray-700 hover:text-indigo-600">Inicio</a>
+    <a href="#" class="text-gray-700 hover:text-indigo-600">Servicios</a>
+    <a href="#" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
+    <a href="#" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
+    <a href="#" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+    </div>
+</nav>
+<section class="inicio">
+    <div class="inicio-container">
+        <h1>Hola, Soy Leon.</h1>
+        <h3>Desarrollador Frontend.</h3>
+        <p> Soy desarrollador web Frontend especializado en crear Landing Pages modernas, rápidas y totalmente responsive. Me enfoco en la experiencia de usuario, el diseño limpio y el rendimiento para ayudarte a destacar en el mundo digital.</p>
+
+        <div class="btn-container">
+            <a href="#">Contáctame</a>
+        </div>
+    </div>
+</section>
+
+<!-- Script para abrir/cerrar menú -->
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    });
+</script>
+
 </body>
 </html>
