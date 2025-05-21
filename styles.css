@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('img/Testa\ di\ leone\ con\ sfumature\ graduali.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.inicio-container{
+    width: 50%;
+    height: 300px;
+    margin-left: 5rem;
+}
+
+.inicio-container h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.inicio-container h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #230ee4;
+    letter-spacing: 1px;
+}
+
+.inicio-container p{
+    width: 78%;
+    margin-top: 5px;
+}
+
+.btn-container a {
+    display: inline-block;
+    background-color: #625be9; /* Indigo-600 */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-container a:hover {
+  background-color: #4338ca; /* Indigo-700 */
+}
+
+/* responsive seccioon inicio */
+@media (max-width: 768px) {
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.inicio-container {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.inicio-container h1 {
+    font-size: 2.5rem;
+}
+
+.inicio-container h3 {
+    font-size: 1.5rem;
+}
+
+.inicio-container p {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-container a {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+}
+}
