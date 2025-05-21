@@ -60,36 +60,52 @@
 .inicio {
     display: flex;
     flex-direction: column;
+    align-items: center; /* centra el contenido */
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 .inicio-container {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 1.5rem;
     border-radius: 15px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .inicio-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .inicio-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1e40af; /* azul oscuro para mejor contraste */
 }
 
 .inicio-container p {
-    width: 100%;
     font-size: 1rem;
-}
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 1.5rem;}
 
 .btn-container a {
-    padding: 0.6rem 1.2rem;
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
     font-size: 1rem;
+    background-color: #1e40af;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container a:hover {
+    background-color: #0f256e;
 }
 }
+
