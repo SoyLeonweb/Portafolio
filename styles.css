@@ -6,6 +6,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    background-color: #fff;
+}
+
 .inicio{
     width: 100%;
     height: 100vh;
@@ -57,10 +61,10 @@
 
 /* seccion Servicios */
 .servicios-section{
-    border: 2px solid red;
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    padding-top: 7rem;
 }
 
 .servicios-section h2{
@@ -92,6 +96,132 @@
     width: 70%;
     color: #312c2c;
 }
+
+.card{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.card i{
+    font-size: 2rem;
+    color: #230ee4;
+}
+
+/* seccion portafolio*/
+.portafolio-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap; 
+}
+
+.portafolio-text {
+    max-width: 350px;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.portafolio-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.portafolio-text .subtitulo {
+    font-size: 1rem;
+    color: #312c2c;
+}
+
+.carousel-container {
+    max-width: 600px;
+    flex: 1;
+}
+
+
+.galeria-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-proyecto img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria-proyecto img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.carousel-track img {
+    min-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+
 /* responsive seccioon inicio */
 @media (max-width: 768px) {
 .inicio {
