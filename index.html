@@ -26,11 +26,11 @@
 
         <!-- Menú de escritorio -->
         <div class="hidden md:flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-indigo-600">Inicio</a>
-        <a href="#" class="text-gray-700 hover:text-indigo-600">Servicios</a>
-        <a href="#" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
-        <a href="#" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
-        <a href="#" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+        <a href="#Inicio" class="text-gray-700 hover:text-indigo-600">Inicio</a>
+        <a href="#Servicios" class="text-gray-700 hover:text-indigo-600">Servicios</a>
+        <a href="#Portafolio" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
+        <a href="#Sobre mí" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
+        <a href="#Contacto" class="text-gray-700 hover:text-indigo-600">Contacto</a>
         </div>
     </div>
     </div>
@@ -92,7 +92,7 @@
     
     <div class="portafolio-text">
         <h2>Proyectos</h2>
-        <p class="subtitulo">Proyectos completos: desarrollo de sitios web elegantes, responsivos y personalizados, construidos con <strong>HTML, CSS y JavaScript, y gestionados con Git.</strong></p>
+        <p class="subtitulo">Proyectos completos: desarrollo de sitios web elegantes, responsivos y personalizados, construidos con <strong>HTML, CSS, JavaScript, y gestionados con Git.</strong></p>
     </div>
 
 
@@ -112,6 +112,53 @@
     </div>
 </section>
 
+<section id="Sobre mí" class="sobre-mi">
+    <div class="container">
+    <div class="contenido">
+    <img src="img/Logo minimalista con testa di leone (1).png" alt="Logotipo" class="logotipo">
+
+    <div class="texto">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador web frontend con experiencia en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>, apasionado por crear experiencias digitales que no solo se vean bien, sino que funcionen con fluidez en cualquier dispositivo. Me especializo en el desarrollo de interfaces limpias, responsivas y accesibles, aplicando buenas prácticas de código, diseño centrado en el usuario y atención al detalle.</p>
+
+<div class="por-que-elegirme">
+    <h3>¿Por qué elegirme?</h3>
+    <ul>
+    <li><strong>Responsabilidad:</strong> Cumplo con plazos y entregas de calidad.</li>
+    <li><strong>Comunicación clara:</strong> Me gusta mantener a mis clientes informados en todo momento.</li>
+    <li><strong>Diseño centrado en el usuario:</strong> Pienso en funcionalidad y experiencia, no solo en estética.</li>
+    <li><strong>Aprendizaje continuo:</strong> Me mantengo actualizado con nuevas tecnologías y tendencias web.</li>
+    <li><strong>Actitud proactiva:</strong> Busco siempre mejorar y aportar ideas que sumen valor.</li>
+    </ul>
+</div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer id="Contacto">
+    <div class="footer-container">
+    <h2>Contacto</h2>
+    <p>¿Tienes un proyecto en mente? Escríbeme aquí:</p>
+
+    <form action="https://formspree.io/f/mblydekp" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+
+<div class="redes">
+    <p>También puedes encontrarme en:</p>
+    <a href="mailto:leonfiverr14@ejemplo.com" class="gmail-color">Email</a> ·
+    <a href="https://es.fiverr.com/sellers/leonospino/edit" target="_blank" class="fiverr-color">Fiverr</a> ·
+    <a href="https://www.facebook.com/leon.14.fiverr" target="_blank" class="facebook-color">Facebook</a>
+</div>
+
+
+    <p class="copy">&copy; 2025 Leon Web. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 
 
@@ -150,6 +197,30 @@
     moveSlide(0);
 });
 </script>
+
+<button id="btn-arriba" title="Volver arriba">↑</button>
+
+<script>
+    const btnArriba = document.getElementById("btn-arriba");
+
+  // Mostrar el botón cuando se hace scroll hacia abajo
+    window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+        btnArriba.style.display = "block";
+    } else {
+        btnArriba.style.display = "none";
+    }
+};
+
+  // Subir al inicio al hacer clic
+    btnArriba.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+  // Ocultarlo por defecto
+    btnArriba.style.display = "none";
+</script>
+
 
 </body>
 </html>

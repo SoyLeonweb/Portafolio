@@ -10,6 +10,10 @@ body{
     background-color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .inicio{
     width: 100%;
     height: 100vh;
@@ -35,7 +39,7 @@ body{
 .inicio-container h3{
     font-size: 2rem;
     font-weight: 600;
-    color: #230ee4;
+    color: #055050;
     letter-spacing: 1px;
 }
 
@@ -46,7 +50,7 @@ body{
 
 .btn-container a {
     display: inline-block;
-    background-color: #625be9; /* Indigo-600 */
+    background-color: #075757; /* Indigo-600 */
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: 10px;
@@ -56,7 +60,7 @@ body{
 }
 
 .btn-container a:hover {
-  background-color: #4338ca; /* Indigo-700 */
+  background-color: #0faaaa; /* Indigo-700 */
 }
 
 /* seccion Servicios */
@@ -110,7 +114,7 @@ body{
 }
 .card i{
     font-size: 2rem;
-    color: #230ee4;
+    color: #075757;
 }
 
 /* seccion portafolio*/
@@ -125,7 +129,7 @@ body{
 }
 
 .portafolio-text {
-    max-width: 350px;
+    max-width: 450px;
     text-align: left;
     margin-left: 5rem;
 }
@@ -138,7 +142,7 @@ body{
 }
 
 .portafolio-text .subtitulo {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #312c2c;
 }
 
@@ -205,7 +209,7 @@ body{
 }
 
 .carousel-btn:hover {
-    background-color: rgba(0,0,0,0.7);
+    background-color: #087c3cb3;
 }
 
 .carousel-btn.left {
@@ -219,6 +223,176 @@ body{
 .carousel-track-wrapper {
     overflow: hidden;
     width: 100%;
+}
+
+/* seccion Sobre Mi*/
+.sobre-mi{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.sobre-mi img{
+    margin-left: 5rem;
+    width: 40%;
+    height: auto;
+}
+
+
+.contenido{
+    display: flex;
+    align-items: center;
+}
+
+.texto h2{
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.texto p{
+    margin-left: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/*Parte de Por que elegirme*/
+.por-que-elegirme {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.por-que-elegirme h3 {
+    margin-right: 0px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.por-que-elegirme ul {
+    list-style: none;
+    padding: 0;
+}
+
+.por-que-elegirme li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.por-que-elegirme li::before {
+    content: "✔";
+    color: #1DBF73; /* Verde tipo Fiverr */
+    margin-right: 10px;
+}
+
+
+/* Footer + Formulario*/
+footer {
+    color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #075757, #353535);
+}
+
+.footer-container h2{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+form {
+    color: black;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+form button {
+    background-color: #f2f2f2;
+    color: #230ee4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #ddd;
+}
+
+.redes {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.redes a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a.gmail-color{
+    color:  #EA4335;
+    font-weight: 600;
+}
+
+a.facebook-color{
+    color: #1877F2;
+    font-weight: 600;
+}
+
+a.fiverr-color{
+    color: #1DBF73;
+    font-weight: 600;
+}
+
+.copy {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* boton para subir al ahcer click*/
+#btn-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#btn-arriba:hover {
+    opacity: 2;
 }
 
 
@@ -260,3 +434,118 @@ body{
     font-size: 1rem;
 }
 }
+
+/*Responsive Servicios*/
+@media screen and (max-width: 768px) {
+.servicios-section {
+    height: auto;
+    padding: 4rem 1rem 2rem;
+}
+
+.servicios-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.servicios-grid {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.servicios-grid p {
+    width: 100%;
+}
+}
+
+
+/* responsive seccion portafolio*/
+@media screen and (max-width: 768px) {
+.portafolio-wrapper {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    gap: 2rem;
+}
+
+.portafolio-text {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.portafolio-text h2 {
+    font-size: 2.5rem;
+}
+
+.portafolio-text .subtitulo {
+    font-size: 1rem;
+}
+
+.carousel-container {
+    max-width: 100%;
+}
+
+.carousel-btn {
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.carousel-track img {
+    height: auto;
+}
+}
+
+/*responsive sobre mi*/
+@media screen and (max-width: 768px) {
+.sobre-mi {
+    height: auto;
+    padding: 3rem 1rem;
+}
+
+.contenido {
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mi img {
+    margin: 0 auto 2rem;
+    width: 80%;
+}
+
+.texto {
+    padding: 0 1rem;
+}
+
+.texto h2 {
+    font-size: 2.2rem;
+    margin: 0 0 1rem;
+}
+
+.texto p {
+    font-size: 1rem;
+    margin: 0 0 2rem;
+}
+
+.por-que-elegirme {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.por-que-elegirme h3 {
+    font-size: 1.3rem;
+}
+
+.por-que-elegirme li {
+    font-size: 0.95rem;
+}
+}
+
+
