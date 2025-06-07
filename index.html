@@ -10,40 +10,46 @@
 </head>
 <body class="bg-gray-100">
 
-<nav class="bg-white shadow-md">
+<nav class="bg-white shadow-md relative z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
         <!-- Logo -->
-        <a href="#" class="text-2xl font-bold text-indigo-600">Leon</a>
+        <a href="#" class="text-2xl font-bold text-[#075757]">Leon</a>
 
         <!-- Botón hamburguesa -->
         <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         </button>
 
         <!-- Menú de escritorio -->
         <div class="hidden md:flex space-x-6">
-        <a href="#Inicio" class="text-gray-700 hover:text-indigo-600">Inicio</a>
-        <a href="#Servicios" class="text-gray-700 hover:text-indigo-600">Servicios</a>
-        <a href="#Portafolio" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
-        <a href="#Sobre mí" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
-        <a href="#Contacto" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+        <a href="#Inicio" class="text-gray-700 hover:text-[#075757] transition-colors">Inicio</a>
+        <a href="#Servicios" class="text-gray-700 hover:text-[#075757] transition-colors">Servicios</a>
+        <a href="#Portafolio" class="text-gray-700 hover:text-[#075757] transition-colors">Portafolio</a>
+        <a href="#Sobre mí" class="text-gray-700 hover:text-[#075757] transition-colors">Sobre mí</a>
+        <a href="#Contacto" class="text-gray-700 hover:text-[#075757] transition-colors">Contacto</a>
         </div>
     </div>
     </div>
 
-    <!-- Menú móvil desplegable centrado -->
-    <div id="menu" class="md:hidden hidden flex flex-col items-center gap-4 py-4">
-    <a href="#" class="text-gray-700 hover:text-indigo-600">Inicio</a>
-    <a href="#" class="text-gray-700 hover:text-indigo-600">Servicios</a>
-    <a href="#" class="text-gray-700 hover:text-indigo-600">Portafolio</a>
-    <a href="#" class="text-gray-700 hover:text-indigo-600">Sobre mí</a>
-    <a href="#" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+<!-- Menú móvil desplegable (flotante con sombra) -->
+<div id="menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.5)] z-50">
+    <div class="flex flex-col items-center gap-4 py-4">
+    <a href="#Inicio" class="text-gray-700 hover:text-[#075757] transition-colors">Inicio</a>
+    <a href="#Servicios" class="text-gray-700 hover:text-[#075757] transition-colors">Servicios</a>
+    <a href="#Portafolio" class="text-gray-700 hover:text-[#075757] transition-colors">Portafolio</a>
+    <a href="#Sobre mí" class="text-gray-700 hover:text-[#075757] transition-colors">Sobre mí</a>
+    <a href="#Contacto" class="text-gray-700 hover:text-[#075757] transition-colors">Contacto</a>
     </div>
+</div>
+
+
 </nav>
+
+
 <section id="Inicio" class="inicio">
     <div class="inicio-container">
         <h1>Hola, Soy Leon.</h1>

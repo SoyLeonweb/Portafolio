@@ -22,6 +22,7 @@ html {
     background-image: url('img/Testa\ di\ leone\ con\ sfumature\ graduali.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .inicio-container{
@@ -399,21 +400,28 @@ a.fiverr-color{
 /* responsive seccioon inicio */
 @media (max-width: 768px) {
 .inicio {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
 }
 
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
 .inicio-container {
-    width: 90%;
-    height: auto;
+    width: 100%;
     margin-left: 0;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 1.5rem;
-    border-radius: 15px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    height: auto;
+    position: relative;
+    z-index: 2; 
+    color: white; 
 }
 
 .inicio-container h1 {
@@ -422,6 +430,8 @@ a.fiverr-color{
 
 .inicio-container h3 {
     font-size: 1.5rem;
+    color: #13f1f1;
+    font-weight: 700;
 }
 
 .inicio-container p {
@@ -431,9 +441,18 @@ a.fiverr-color{
 
 .btn-container a {
     padding: 0.6rem 1.2rem;
+    background-color: #13f1f1;
+    color: black;
     font-size: 1rem;
 }
 }
+
+.btn-container a:hover {
+    background-color: #0a4949; /* o cualquier color más claro */
+    color: #ffffff; /* opcional */
+}
+
+
 
 /*Responsive Servicios*/
 @media screen and (max-width: 768px) {
