@@ -110,6 +110,10 @@
         <div class="carousel-track" id="carouselTrack">
             <img src="img/responsivePC.png" alt="">
             <img src="img/responsivePC2.png" alt="">
+            <img src="img/A&M.png" alt="">
+            <img src="img/boda-2.png" alt="">
+            <img src="img/boda-3.png" alt="">
+            <img src="img/boda-8.png" alt="">
         </div>
         </div>
 
@@ -168,23 +172,18 @@
     </div>
 </footer>
 
-
-
-
-<script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-
-    btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    });
-</script>
+    <script src="https://unpkg.com/scrollreveal">
+    </script>
 
 <script>
-    let slideIndex = 0;
+
+    // Carrousel //
+        let slideIndex = 0;
 
     function moveSlide(direction) {
     const track = document.getElementById('carouselTrack');
+    if (!track) return;
+
     const slides = track.querySelectorAll('img');
     const wrapper = track.parentElement;
     const slideWidth = wrapper.offsetWidth;
@@ -201,59 +200,12 @@
     track.style.transform = `translateX(${offset}px)`;
 }
 
-  // Ajusta el desplazamiento si la ventana cambia de tamaño
     window.addEventListener('resize', () => {
     moveSlide(0);
 });
+
 </script>
 
-<button id="btn-arriba" title="Volver arriba">↑</button>
-
-<script>
-    const btnArriba = document.getElementById("btn-arriba");
-
-  // Mostrar el botón cuando se hace scroll hacia abajo
-    window.onscroll = function () {
-    if (document.documentElement.scrollTop > 200) {
-        btnArriba.style.display = "block";
-    } else {
-        btnArriba.style.display = "none";
-    }
-};
-
-  // Subir al inicio al hacer clic
-    btnArriba.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-  // Ocultarlo por defecto
-    btnArriba.style.display = "none";
-</script>
-
-    <script>
-    ScrollReveal().reveal('.inicio-container', {
-    delay: 260,
-    duration: 940,
-    reset: true
-});
-ScrollReveal().reveal('.servicios-section', {
-    delay: 260,
-    duration: 840,
-    reset: true
-});
-ScrollReveal().reveal('.texto', {
-    delay: 260,
-    duration: 840,
-    reset: true
-});
-ScrollReveal().reveal('.logotipo', {
-    delay: 260,
-    duration: 840,
-    reset: true
-});
-    </script>
-<script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal">
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
