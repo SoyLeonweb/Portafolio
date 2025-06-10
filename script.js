@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 }
 
-
-  // Botón "Volver arriba"
+  // Boton "Volver arriba"
     const btnArriba = document.getElementById("btn-arriba");
 
     if (btnArriba) {
@@ -25,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     btnArriba.style.display = "none";
 }
 
-  // ScrollReveal (solo si está cargado)
+  // ScrollReveal 
     if (typeof ScrollReveal !== "undefined") {
     ScrollReveal().reveal('.inicio-container', {
         delay: 260,
